@@ -4,7 +4,7 @@ from config import app_config
 from flask_jwt_extended import JWTManager
 from .admin.admin_views import CompleteOrder, AcceptStatus, MarkOrderInTransit, DeclineOrder
 from app.auth.auth_views import Login, SignUp
-from .customer.customer_views import PostParcel, GetOrders, SpecificOrder, InTransitOrders, GetAcceptedOrders, DeclinedOrders, CompletedOrders
+from .customers.customer_views import PostParcel, GetOrders, SpecificOrder, InTransitOrders, GetAcceptedOrders, DeclinedOrders, CompletedOrders
 
 
 
