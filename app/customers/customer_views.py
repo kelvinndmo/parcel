@@ -27,10 +27,10 @@ class PostParcel(Resource):
         if not validate.valid_origin_name(origin):
             return {'message': "invalid origin name"}, 400
 
-        if isinstance(price) != int:
+        if type(price) != int:
             return {'message': "Invalid price"}, 400
 
-        if isinstance(weight) != int:
+        if type(weight) != int:
             return {'message': "Invalid weight"}, 400
 
         order = Order(origin, price, destination, weight)
