@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restful import Api
-from instance.config import app_config
+from config import app_config
 from flask_jwt_extended import JWTManager
 from .admin.admin_views import CompleteOrder, AcceptStatus, MarkOrderInTransit, DeclineOrder
 from app.auth.auth_views import Login, SignUp
